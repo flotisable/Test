@@ -4,22 +4,21 @@
 #include <QtWidgets>
 #include <QDebug>
 
-#include <Qt3DExtras>
-#include <Qt3DCore>
-
-class TestClass : public Qt3DExtras::Qt3DWindow
+class TestClass : public QGraphicsView
 {
   Q_OBJECT
 
   public:
 
-    TestClass();
+    TestClass( QWidget *parent = nullptr );
 
-    void draw(); // draw a sphere and a cube
+  public slots:
+
+    void addItem();
 
   private:
 
-    Qt3DCore::QEntity *root;
+    QGraphicsScene *scene;
 };
 
 #endif // TESTCLASS_H

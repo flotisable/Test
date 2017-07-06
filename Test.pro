@@ -1,4 +1,4 @@
-QT += widgets 3dextras 3dcore 3drender
+QT += widgets
 
 CONFIG += c++11
 

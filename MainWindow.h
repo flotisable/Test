@@ -16,25 +16,10 @@ class MainWindow : public QWidget
 
     void setupLayout  ();
     void setupConnect ();
-    void initControl  ();
 
-    TestClass *test; // Qt3D window
+    TestClass *test;
 
-    // for setup camera position
-    QLabel    *posLabel;
-    QLineEdit *posXEdit;
-    QLineEdit *posYEdit;
-    QLineEdit *posZEdit;
-    // end for setup camera position
-
-    // for setup camera view center
-    QLabel    *viewLabel;
-    QLineEdit *viewXEdit;
-    QLineEdit *viewYEdit;
-    QLineEdit *viewZEdit;
-    // end for setup camera view center
-
-    QPushButton *captureButton; // to capture the image
+    QPushButton *addButton;
 };
 
 #endif // MAINWINDOW_H
